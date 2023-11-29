@@ -1,21 +1,9 @@
 import { Route } from '@angular/router';
-import { ButtonComponent } from './design-system/button/button.component'
+import { FeedbackAppComponent } from './feedback-app/feedback-app.component'
 
 export const appRoutes: Route[] = [
     {
-        path:'iza', component: ButtonComponent
+        path:'', component: FeedbackAppComponent
     }
 ];
 
-// const appRoutes: Route[] = [
-//     {
-//         path:'/', component: ButtonComponent
-//     }
-// ];
-
-// export default appRoutes;
-// @NgModule({
-//     imports: [RouterModule.forRoot(appRoutes)],
-//     exports: [RouterModule]
-//   })
-//   export class AppRoutingModule {}
