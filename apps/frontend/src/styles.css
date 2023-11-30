@@ -2,4 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* You can add global styles to this file, and also import other style files */
+.bgClr {
+  @apply bg-gradient-to-tr from-[#28A7ED] via-[#A337F6] to-[#E84D70];
+}

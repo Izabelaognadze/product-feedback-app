@@ -1,0 +1,10 @@
+<div class="font-MainFont bgClr py-4 flex flex-row px-6 justify-between md:w-[223px] md:h-[178px] md:items-end md:py-6 md:rounded-[10px] lg:w-[255px] lg:h-[137px]">
+    <div class="text-white">
+        <h1 class="text-[15px] font-bold tracking-[-0.187px] md:text-xl">Frontend Mentor</h1>
+        <p class="opacity-75 font-medium text-[13px] md:text-[15px]">Feedback Board</p>
+    </div>
+    <div class="h-[17px] my-auto md:hidden" (click)="toggleOn=!toggleOn">
+        <img src="assets/shared/mobile/icon-hamburger.svg"alt="" *ngIf="!toggleOn">
+        <img src="assets/shared/mobile/icon-close.svg" alt="" *ngIf="toggleOn">
+    </div>
+</div>
