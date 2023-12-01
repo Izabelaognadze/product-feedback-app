@@ -9,5 +9,9 @@ import { CommonModule } from '@angular/common';
   styleUrl: './vote-counter.component.css'
 })
 export class VoteCounterComponent {
-  @Input() public text='';
+  @Input() public value = 1;
+
+  addOne(){
+    this.value +=1;
+  }
 }

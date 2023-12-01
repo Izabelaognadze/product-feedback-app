@@ -8,6 +8,12 @@ import { CommonModule } from '@angular/common';
   templateUrl: './combo-box.component.html',
   styleUrl: './combo-box.component.css'
 })
-export class ComboBoxComponent {
+export class ComboBoxComponent{
+  sort = [
+    {id : 1, sort : 'Most Upvotes'},
+    {id : 2, sort : 'Least Upvotes'},
+    {id : 3, sort : 'Most Comments'},
+    {id : 4, sort : 'Least Comments'},
+  ]
 
 }
