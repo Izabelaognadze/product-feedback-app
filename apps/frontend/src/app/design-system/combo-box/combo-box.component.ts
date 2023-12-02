@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { v4 as uuidv4} from 'uuid'
 
 @Component({
   selector: 'product-feedback-app-combo-box',
@@ -10,10 +11,10 @@ import { CommonModule } from '@angular/common';
 })
 export class ComboBoxComponent{
   sort = [
-    {id : 1, sort : 'Most Upvotes'},
-    {id : 2, sort : 'Least Upvotes'},
-    {id : 3, sort : 'Most Comments'},
-    {id : 4, sort : 'Least Comments'},
+    {id : uuidv4(), sort : 'Most Upvotes'},
+    {id : uuidv4(), sort : 'Least Upvotes'},
+    {id : uuidv4(), sort : 'Most Comments'},
+    {id : uuidv4(), sort : 'Least Comments'},
   ]
 
 }
