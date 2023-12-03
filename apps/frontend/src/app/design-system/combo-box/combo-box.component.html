@@ -1,8 +1,6 @@
 <div class="">
-    <div class="">Sort by : </div>
-    <select name="">
-        <option value="" *ngFor="let item of sort" >{{item.sort}} </option>
-    </select>
+  <div class="py-[26px] px-[17.5px] rounded-[10px] bg-clr-MidnightBlue-#373F68 max-w-min whitespace-nowrap" >Sort by: {{ selectedSort }}</div>
+  <select name="" (change)="onSortChange($event)" >
+    <option *ngFor="let item of sort" [value]="item.sort">{{ item.sort }}</option>
+  </select>
 </div>
-
-  
