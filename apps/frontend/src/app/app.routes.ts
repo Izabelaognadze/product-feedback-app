@@ -1,9 +1,9 @@
 import { Route } from '@angular/router';
-import { FeedbackAppComponent } from './feedback-app/feedback-app.component'
+import {SuggestionsComponent} from './suggestions/suggestions.component'
 
 export const appRoutes: Route[] = [
     {
-        path:'', component: FeedbackAppComponent
+        path:'', component: SuggestionsComponent
     }
 ];
 

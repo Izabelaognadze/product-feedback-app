@@ -22,6 +22,9 @@ module.exports = {
       }, 
       fontFamily:{
         MainFont: 'Jost'
+      },
+      padding:{
+        'defaultPadding': '24px',
       }
     },
   },
