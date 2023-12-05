@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {FeedbackBoardComponent} from '../side-menu/feedback-board/feedback-board.component';
+import {FeedbackBoardComponent} from '../suggestions/feedback-board/feedback-board.component';
 import {HeaderComponent} from './header/header.component';
 
 @Component({

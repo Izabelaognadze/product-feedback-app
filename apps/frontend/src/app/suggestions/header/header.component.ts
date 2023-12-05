@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {ButtonDirective} from '../../design-system/button.directive';
-import {v4 as uuidv4} from 'uuid'
+import { SortByList } from '../../shared/constants/sort-by-list'
 
 @Component({
   selector: 'product-feedback-app-header',
@@ -13,13 +13,7 @@ import {v4 as uuidv4} from 'uuid'
 export class HeaderComponent {
   dropdownOpen = false;
   selectedSort: string = 'Most Upvotes';
-
-  sort = [
-    {id : uuidv4(), sort : 'Most Upvotes'},
-    {id : uuidv4(), sort : 'Least Upvotes'},
-    {id : uuidv4(), sort : 'Most Comments'},
-    {id : uuidv4(), sort : 'Least Comments'},
-  ]
+  sortByList = SortByList
 
   onSortChange(event: Event) {
     this.selectedSort = (event.target as HTMLSelectElement).value;

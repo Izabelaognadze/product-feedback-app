@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './feedback-board.component.html',
-  styleUrl: './feedback-board.component.css'
+  styleUrl: './feedback-board.component.css',
 })
 export class FeedbackBoardComponent {
   toggleOn = false;

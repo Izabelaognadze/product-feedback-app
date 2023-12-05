@@ -15,10 +15,11 @@
             </svg>
           </div>
         </div>
-        <!-- <select name="" (change)="onSortChange($event)" >
-          <option *ngFor="let item of sort" [value]="item.sort">{{ item.sort }}</option>
-        </select> -->
       </div>
 
       <button productFeedbackAppButton variant="default" class="bg-clr-purple-#AD1FEA my-auto">+ add feedback</button>
 </div>
+
+<select name="" class="mt-7" (change)="onSortChange($event)" >
+  <option *ngFor="let item of sortByList" [value]="item.sort">{{ item.sort }}</option>
+</select>

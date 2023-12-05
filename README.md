@@ -97,7 +97,7 @@ Nx comes with local caching already built-in (check your `nx.json`). On CI you m
 - NX
 - Typescript
 - Tailwind Css
-- uuid (apps\frontend\src\app\design-system\combo-box\combo-box.component.ts)
+- uuid (product-feedback-app\apps\frontend\src\app\shared\constants\sort-by-list.ts)
 -
 -
 
