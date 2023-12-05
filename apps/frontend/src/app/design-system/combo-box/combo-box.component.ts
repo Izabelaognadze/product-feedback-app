@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './combo-box.component.css'
 })
 export class ComboBoxComponent{
+  dropdownOpen = false;
   selectedSort: string = 'Most Upvotes';
 
   sort = [

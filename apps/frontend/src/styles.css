@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.bgClr {
-  @apply bg-gradient-to-tr from-[#28A7ED] via-[#A337F6] to-[#E84D70];
+.layout {
+  @apply md:mx-10  lg:mx-[165px] xl:mx-auto max-w-[1100px];
 }

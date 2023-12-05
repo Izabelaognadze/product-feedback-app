@@ -1,0 +1,3 @@
+.bgClr {
+  @apply bg-gradient-to-tr from-[#28A7ED] via-[#A337F6] to-[#E84D70];
+}

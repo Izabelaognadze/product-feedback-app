@@ -1,5 +1,17 @@
 <div class="">
-  <div class="py-[26px] px-[17.5px] rounded-[10px] bg-clr-MidnightBlue-#373F68 max-w-min whitespace-nowrap" >Sort by: {{ selectedSort }}</div>
+  <div (click)="dropdownOpen =! dropdownOpen" class="flex cursor-pointer font-MainFont bg-clr-MidnightBlue-#373F68 whitespace-nowrap rounded-[10px] max-w-min py-[26px] px-[17.5px] gap-[9px]" >
+    <p class="text-clr-grey-#F2F4FF text-[14px] font-normal">Sort by: <span class="font-bold">{{ selectedSort }}</span></p>
+    <div class="my-auto" *ngIf="!dropdownOpen">
+      <svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="0 0 9 7" fill="none">
+        <path d="M1 1L5 5L9 1" stroke="white" stroke-width="2"/>
+      </svg>
+    </div>
+    <div class="my-auto" *ngIf="dropdownOpen">
+      <svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="0 0 9 7" fill="none">
+        <path d="M1 6L5 2L9 6" stroke="white" stroke-width="2"/>
+      </svg>
+    </div>
+  </div>
   <select name="" (change)="onSortChange($event)" >
     <option *ngFor="let item of sort" [value]="item.sort">{{ item.sort }}</option>
   </select>
