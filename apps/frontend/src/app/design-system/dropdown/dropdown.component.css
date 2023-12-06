@@ -1,0 +1,9 @@
+ul {
+  li {
+    border-bottom: 1px solid var(--darkblue);
+    padding: 12px 24px;
+    &:last-child {
+      border: none;
+    }
+  }
+}

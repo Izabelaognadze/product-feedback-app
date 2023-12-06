@@ -1,1 +1,13 @@
-<p>dropdown works!</p>
+<!-- <div class="bg-white font-MainFont w-min absolute right-0 top-0 h-min" *ngIf="dropdownOpen">
+    <div class="flex justify-between gap-[25px]">
+        <p class="text-clr-Horizon-Mist-#647196 text-base font-normal capitalize whitespace-nowrap" *ngFor="let item of content">{{item}}</p>
+        <img src="/assets/shared/icon-check.svg" class="my-auto" alt="">
+    </div>
+</div> -->
+
+<ul *ngIf="dropdownOpen" class="bg-white rounded-[10px] shadow-xl">
+    <li *ngFor="let item of content" class="flex justify-between py-3 px-6 cursor-pointer">
+        <p class="text-clr-Horizon-Mist-#647196 text-base font-normal capitalize whitespace-nowrap hover:text-clr-purple-#AD1FEA transition duration-500">{{item}}</p>
+        <img  src="/assets/shared/icon-check.svg" class="my-auto">
+    </li>
+</ul>
