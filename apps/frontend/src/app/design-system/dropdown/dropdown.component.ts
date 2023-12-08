@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 export class DropdownComponent {
   @Input() content:string[]=[];
   @Output() itemSelected = new EventEmitter<string>();
+  @Input() selectedItem = '';
 
   selectItem(item: string) {
     this.itemSelected.emit(item);

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ButtonDirective } from '../../design-system/button.directive';
 import { SortByList } from '../../shared/constants/sort-by-list';
-import { DropdownComponent } from '../../design-system/dropdown/dropdown.component'
+import { DropdownComponent } from '../../design-system/dropdown/dropdown.component';
 
 @Component({
   selector: 'product-feedback-app-header',

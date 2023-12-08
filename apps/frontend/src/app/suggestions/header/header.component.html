@@ -29,10 +29,8 @@
           </svg>
         </div>
       </div>
-      <product-feedback-app-dropdown *ngIf="dropdownOpen" [content]="getSortByList()" (itemSelected)="onItemSelected($event)" class="layout absolute left-0 translate-y-4 w-[255px]"></product-feedback-app-dropdown>
+      <product-feedback-app-dropdown *ngIf="dropdownOpen" [content]="getSortByList()" [selectedItem]="selectedSort" (itemSelected)="onItemSelected($event)" class="layout absolute left-0 translate-y-4 w-[255px]"></product-feedback-app-dropdown>
     </div>
-    
-    
   </div>
 
   <button productFeedbackAppButton variant="default" class="bg-clr-purple-#AD1FEA my-auto">+ add feedback</button>
