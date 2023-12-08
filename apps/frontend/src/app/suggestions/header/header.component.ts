@@ -18,7 +18,7 @@ export class HeaderComponent {
   sortByList = SortByList
 
   getSortByList(): string[] {
-    return this.sortByList.map(item => item.sort);
+    return this.sortByList.map(item => item.item);
   }
 
   onItemSelected(item: string) {
