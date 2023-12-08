@@ -1,7 +1,13 @@
 <div class="bg-clr-Whispering-white-#F7F8FD min-h-screen">
-    <div class="layout">
-        <product-feedback-app-feedback-board></product-feedback-app-feedback-board>
-        <product-feedback-app-header></product-feedback-app-header>
-        <product-feedback-app-no-feedback></product-feedback-app-no-feedback>
+    <div class="layout flex flex-col lg:flex-row gap-[30px] md:pt-14 lg:pt-24">
+        <div class="flex flex-col md:flex-row lg:flex-col gap-6 md:gap-[10px] lg:gap-6">
+            <product-feedback-app-feedback-board></product-feedback-app-feedback-board>
+            <product-feedback-app-selector-button></product-feedback-app-selector-button>
+            <product-feedback-app-roadmap></product-feedback-app-roadmap>
+        </div>
+        <div class="flex flex-col lg:w-[100%]">
+            <product-feedback-app-header></product-feedback-app-header>
+            <product-feedback-app-no-feedback></product-feedback-app-no-feedback>
+        </div>
     </div>
 </div>
