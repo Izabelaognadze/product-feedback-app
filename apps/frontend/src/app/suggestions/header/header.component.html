@@ -17,8 +17,7 @@
     <div class="relative">
       <div (click)="dropdownOpen =! dropdownOpen"
         class="flex cursor-pointer font-MainFont whitespace-nowrap rounded-[10px] max-w-min py-[26px] gap-[9px]">
-        <p class="text-clr-grey-#F2F4FF text-[14px] font-normal">Sort by: <span class="font-bold">{{ selectedSort
-            }}</span></p>
+        <p class="text-clr-grey-#F2F4FF text-[14px] font-normal">Sort by: <span class="font-bold">{{ selectedSort }}</span></p>
         <div class="my-auto" *ngIf="!dropdownOpen">
           <svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="0 0 9 7" fill="none">
             <path d="M1 1L5 5L9 1" stroke="white" stroke-width="2" />
@@ -30,8 +29,9 @@
           </svg>
         </div>
       </div>
-      <product-feedback-app-dropdown *ngIf="dropdownOpen"  [content]="getSortByList()" class="layout absolute left-0 translate-y-4 w-[255px]"></product-feedback-app-dropdown>
+      <product-feedback-app-dropdown *ngIf="dropdownOpen" [content]="getSortByList()" (itemSelected)="onItemSelected($event)" class="layout absolute left-0 translate-y-4 w-[255px]"></product-feedback-app-dropdown>
     </div>
+    
     
   </div>
 

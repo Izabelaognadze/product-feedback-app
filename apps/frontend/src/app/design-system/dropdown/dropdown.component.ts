@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter  } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,7 +9,10 @@ import { CommonModule } from '@angular/common';
   styleUrl: './dropdown.component.css',
 })
 export class DropdownComponent {
-  @Input() dropdownOpen = true;
   @Input() content:string[]=[];
-  
+  @Output() itemSelected = new EventEmitter<string>();
+
+  selectItem(item: string) {
+    this.itemSelected.emit(item);
+  }
 }

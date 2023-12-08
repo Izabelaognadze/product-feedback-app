@@ -17,11 +17,12 @@ export class HeaderComponent {
   selectedSort: string = 'Most Upvotes';
   sortByList = SortByList
 
-  onSortChange(event: Event) {
-    this.selectedSort = (event.target as HTMLSelectElement).value;
-  }
-
   getSortByList(): string[] {
     return this.sortByList.map(item => item.sort);
+  }
+
+  onItemSelected(item: string) {
+    this.selectedSort = item;
+    this.dropdownOpen = false;
   }
 }
