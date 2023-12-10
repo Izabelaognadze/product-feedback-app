@@ -5,3 +5,7 @@
 .layout {
   @apply md:mx-10  lg:mx-[165px] xl:mx-auto max-w-[1100px];
 }
+
+.side-bar {
+  @apply md:w-[100%] flex flex-grow flex-shrink-0;
+}

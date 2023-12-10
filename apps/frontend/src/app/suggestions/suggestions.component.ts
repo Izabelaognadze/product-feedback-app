@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import {FeedbackBoardComponent} from '../suggestions/feedback-board/feedback-board.component';
 import {HeaderComponent} from './header/header.component';
 import { NoFeedbackComponent } from './no-feedback/no-feedback.component'
-import { RoadmapComponent } from '../roadmap/roadmap.component';
+import { RoadmapComponent } from '../suggestions/roadmap/roadmap.component';
 import { SelectorButtonComponent } from '../design-system/selector-button/selector-button.component';
 
 @Component({
