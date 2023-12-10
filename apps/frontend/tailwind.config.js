@@ -10,15 +10,32 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        'clr-purple-#AD1FEA' : '#AD1FEA',
-        'clr-blue-#4661E6' : '#4661E6',
-        'clr-MidnightBlue-#373F68': '#373F68',
-        'clr-grey-#F2F4FF': '#F2F4FF',
-        'clr-Whispering-white-#F7F8FD': '#F7F8FD',
-        'clr-RoyalNavy-#3A4374': '#3A4374',
-        'clr-Horizon-Mist-#647196': '#647196',
-        'clr-orange-#F49F85': '#F49F85',
-        'clr-ligth-blue-#62BCFA': '#62BCFA',
+        clr: {
+          purple: { 
+            'purple' : '#AD1FEA', 
+            'purple-hover' : '#C75AF6',
+          },
+          blue: {
+            'light-blue-#62BCFA' : '#62BCFA',
+            'dark-blue-#4661E6' : '#4661E6',
+            'dark-blue-hover-#7C91F9' : '#7C91F9',
+          }, 
+          white: {
+            'dark-#F2F4FF' : '#F2F4FF',
+            'light-#F7F8FD' : '#F7F8FD',
+          },
+          darkBlue: {
+            'button-#3A4374' : '#3A4374',
+            'button-hover-#3A4374' : '#656EA3',
+            'superDarkBlue-#373F68' : '#373F68',
+            'lightDarkBlue-#647196' : '#647196',
+          },
+          orange: {
+            'clr-orange-#F49F85': '#F49F85',
+            'red': '#D73737',
+            'red-hover' : '#E98888'
+          },
+        },
       }, 
       fontFamily:{
         MainFont: 'Jost'

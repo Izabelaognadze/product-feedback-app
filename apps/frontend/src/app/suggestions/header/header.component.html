@@ -1,4 +1,4 @@
-<div class="md:mt-10 lg:mt-0 flex font-MainFont bg-clr-MidnightBlue-#373F68 justify-between px-defaultPadding md:rounded-[10px]">
+<div class="md:mt-10 lg:mt-0 flex font-MainFont bg-clr-darkBlue-superDarkBlue-#373F68 justify-between px-defaultPadding md:rounded-[10px]">
 
   <div class="flex gap-[38px]">
     <div class="hidden md:flex my-auto text-white gap-4 text-lg tracking-[-0.25px] font-bold">
@@ -17,7 +17,7 @@
     <div class="relative">
       <div (click)="dropdownOpen =! dropdownOpen"
         class="flex cursor-pointer font-MainFont whitespace-nowrap rounded-[10px] max-w-min py-[26px] gap-[9px]">
-        <p class="text-clr-grey-#F2F4FF text-[14px] font-normal">Sort by: <span class="font-bold">{{ selectedSort }}</span></p>
+        <p class="text-clr-white-dark-#F2F4FF text-[14px] font-normal">Sort by: <span class="font-bold">{{ selectedSort }}</span></p>
         <div class="my-auto" *ngIf="!dropdownOpen">
           <svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="0 0 9 7" fill="none">
             <path d="M1 1L5 5L9 1" stroke="white" stroke-width="2" />
@@ -33,5 +33,5 @@
     </div>
   </div>
 
-  <button productFeedbackAppButton variant="default" class="bg-clr-purple-#AD1FEA my-auto">+ add feedback</button>
+  <button productFeedbackAppButton variant="default" class="bg-clr-purple-purple hover:bg-clr-purple-purple-hover my-auto">+ add feedback</button>
 </div>
