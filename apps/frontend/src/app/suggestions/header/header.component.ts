@@ -15,10 +15,10 @@ export class HeaderComponent {
   dropdownOpen = false;
   suggestions = 5;
   selectedSort: string = 'Most Upvotes';
-  sortByList = SortByList
+  sortByList = SortByList;
 
   getSortByList(): string[] {
-    return this.sortByList.map(item => item.item);
+    return this.sortByList.map((item) => item.item);
   }
 
   onItemSelected(item: string) {

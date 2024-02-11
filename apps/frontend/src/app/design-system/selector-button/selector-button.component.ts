@@ -7,37 +7,37 @@ import { Selector } from '../../shared/models/selectors';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './selector-button.component.html',
-  styleUrl: './selector-button.component.css'
+  styleUrl: './selector-button.component.css',
 })
 export class SelectorButtonComponent {
-  selector : Selector[]=[]
-  
-  constructor(){
+  selector: Selector[] = [];
+
+  constructor() {
     this.selector = [
       {
-        id:1,
-        name : 'All'
+        id: 1,
+        name: 'All',
       },
       {
-        id:2,
-        name : 'UI'
+        id: 2,
+        name: 'UI',
       },
       {
-        id:3,
-        name : 'UX'
+        id: 3,
+        name: 'UX',
       },
       {
-        id:4,
-        name : 'Enhancement'
+        id: 4,
+        name: 'Enhancement',
       },
       {
-        id:5,
-        name : 'Bug'
+        id: 5,
+        name: 'Bug',
       },
       {
-        id:6,
-        name : 'Feature'
+        id: 6,
+        name: 'Feature',
       },
-    ]
+    ];
   }
 }

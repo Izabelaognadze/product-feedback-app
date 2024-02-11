@@ -1,0 +1,19 @@
+{
+    "suggestions": [
+        {
+            "suggestion" : "",
+            "voteAmount" : 0,
+            "description" : "",
+            "category" : "",
+            "comments" : [
+                {
+                    "profileImg" : "",
+                    "fullName" : "",
+                    "userName" : "",
+                    "comment": "",
+                    "reply" : []
+                }
+            ]
+        }
+    ]
+}

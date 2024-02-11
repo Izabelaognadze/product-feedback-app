@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,5 +9,9 @@ import { CommonModule } from '@angular/common';
   styleUrl: './feedback-board.component.css',
 })
 export class FeedbackBoardComponent {
-  toggleOn = false;
+  @Input() public toggleOn = false;
+
+  toggleMenu() {
+    this.toggleOn = !this.toggleOn;
+  }
 }
